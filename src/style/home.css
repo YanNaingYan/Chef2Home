@@ -1,0 +1,38 @@
+/* Typography Class Helpers */
+.font-editorial {
+  font-family: 'Playfair Display', Cormorant Garamond, Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+}
+
+/* Subtle, transparent gradient scrim across all screen viewports */
+.hero-photo-scrim {
+  background: linear-gradient(
+    180deg, 
+    rgba(250, 248, 245, 0.2) 0%, 
+    rgba(28, 25, 23, 0.05) 50%, 
+    rgba(250, 248, 245, 0.4) 100%
+  );
+}
+
+/* Ensure smooth image scaling on wide screens / TV viewports */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E1D9;
+  border-radius: 9999px;
+}
